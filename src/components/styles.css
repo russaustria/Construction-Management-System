@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.nav__brand img {
+  width: 200px; /* set your desired width */
+  height: auto; /* maintain aspect ratio */
+}
+
+.nav__link{
+  text-decoration: none;
+  color: rgba(7, 7, 7, 0.91);
+  text-shadow: 2px 2px 6px rgba(46, 45, 45, 0.192);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.catchphrase {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 170px;
+  animation: slideIn 1.5s ease-out forwards;
+  color: rgb(255, 255, 255);
+}
+
+.catchphrase h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(1, 1, 1, 0.192);
+}
+
+.catchphrase h4 {
+  font-size: 32px;
+  margin: 5px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-title{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+
+.subtitle-login{
+  font-size: 40px;
+}
+
+.form-label{
+  font-size: 15px;
+}
+
+.animation-container {
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav__brand img {
+    width: 180px; /* set your desired width */
+    height: auto; /* maintain aspect ratio */
+  }
+  
+
+  .nav__link{
+    text-decoration: none;
+    color: rgba(7, 7, 7, 0.91);
+    text-shadow: 2px 2px 6px rgba(46, 45, 45, 0.192);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  .catchphrase {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    animation: slideIn 1.5s ease-out forwards;
+    color: rgb(255, 255, 255);
+  }
+  
+  .catchphrase h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(1, 1, 1, 0.192);
+  }
+  
+  .catchphrase h4 {
+    font-size: 32px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav__brand img {
+    width: 70%; /* set your desired width */
+    max-width: 150px; /* set your max width */
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .catchphrase {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px; /* Adjust padding or margin as needed */
+    animation: slideIn 1.5s ease-out forwards;
+    color: rgb(255, 255, 255);
+  }
+
+  .catchphrase h1 {
+    font-size: 42px; /* Adjust font size as needed */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(1, 1, 1, 0.192);
+  }
+
+  .catchphrase h4 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin: 5px;
+  }
+}
+

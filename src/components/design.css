@@ -1,0 +1,171 @@
+body {
+  background: #ffffff;
+}
+
+.logo-icon{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#side_nav {
+  background: #ffffff;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+}
+
+.adj {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+hr.h-color {
+  background: #eee;
+}
+
+
+.close-btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #side_nav {
+    margin-left: -250px;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 1;
+  }
+
+  #side_nav.active {
+    margin-left: 0;
+  }
+
+  .close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+  }
+
+  .table th, .table td {
+    font-size: 12px; /* Decrease font size for smaller screens */
+  }
+
+  
+}
+
+[data-tab-content] {
+display: none;
+}
+
+.active[data-tab-content] {
+display: block;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px; /* Add some margin for better spacing */
+}
+
+.table th, .table td {
+  padding: 8px; /* Adjust the padding as needed */
+  text-align: left;
+}
+
+/* Optional: Style the dropdown */
+.table select {
+  width: 100%;
+  padding: 5px;
+}
+
+.tabs {
+text-align:center;
+list-style-type: none;
+padding: 0;
+}
+
+.tab {
+cursor: pointer;
+padding: 10px;
+color:black;
+font-size: 15px;
+}
+
+.tab.active {
+background-color: #cbeaff;
+}
+
+.tab:hover {
+background-color: #cbe5f7;
+}
+
+.tab-content {
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.tablog {
+  cursor: pointer;
+  padding: 7px;
+  color:black;
+  font-size: 14px;
+  margin-top: 20px;
+  }
+  
+  .tablog.active {
+  background-color: #cbeaff;
+  }
+  
+  .tablog:hover {
+  background-color: #ff0101;
+  }
+  
+  .tablog-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+.dropbtn {
+ background-color: transparent;
+ color: rgb(0, 0, 0);
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.dropdown-content {
+ display: none;
+ text-align: center;
+ color: rgb(0, 0, 0);
+}
+
+.dropdown-content a {
+ color: rgb(0, 0, 0);
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ 
+}
+
+.dropdown-content a:hover {
+ background-color: #a6dcff;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
